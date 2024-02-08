@@ -16,14 +16,22 @@
         margin: 0;
       }
       .container {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         display: flex;
         width: 100%;
-        height: 46vw;
+        height: 40rem;
         background: linear-gradient(to bottom, #2f0058, rgba(44, 0, 26, 0.589));
         align-items: center;
         justify-content: center;
       }
-
+      @media only screen and (max-width: 1000px) {
+        body {
+          margin-top: 10rem;
+        }
+      }
       input:nth-of-type(3),
       input:nth-of-type(4) {
         margin-right: 5px !important;
@@ -55,8 +63,8 @@
         color: whitesmoke;
         border: none;
         border-radius: 4px;
-        height: 3rem;
         cursor: pointer;
+        height: 3rem;
       }
     </style>
   </head>
