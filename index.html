@@ -15,14 +15,14 @@
         padding: 0;
         margin: 0;
       }
-      .container {
+      .containers {
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         display: flex;
         width: 100%;
-        height: 40rem;
+        height: 60rem;
         background: linear-gradient(to bottom, #2f0058, rgba(44, 0, 26, 0.589));
         align-items: center;
         justify-content: center;
@@ -40,7 +40,7 @@
       form {
         flex-direction: column;
         padding: 2vw 4vw;
-        width: 110%;
+        width: 100%;
         max-width: 650px;
         background-color: whitesmoke;
         border-radius: 5px;
@@ -69,7 +69,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="containers">
       <form onsubmit="sendEmail(); reset();  return false;">
         <h2 style="display: flex; width: 100%">Contact us</h2>
         <input
@@ -79,6 +79,7 @@
           placeholder="Name"
           required
         />
+        <!-- <h3>Your Date of birth</h3> -->
         <input
           style="display: flex; width: 100%; cursor: text"
           type="date"
